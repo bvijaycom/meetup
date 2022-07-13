@@ -243,7 +243,7 @@ kubectl version --client
 
 # Step 7: Deploy an Azure Kubernetes Service (AKS) cluster
 
-- Create kubernetes Cluster with 1 worker Node
+- Create kubernetes Cluster with minimum 2 worker Node
 
 - In your learning setup,if you have project portal.azure.com test account then increase node count from 1 to 3.
 
@@ -252,7 +252,7 @@ kubectl version --client
 az aks create \
     --resource-group cloudnloudrg \
     --name myAKSCluster \
-    --node-count 1 \
+    --node-count 2 \
     --generate-ssh-keys \
     --attach-acr cnlacr1
 	
