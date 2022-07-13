@@ -274,3 +274,19 @@ kubectl get nodes
 ```
 
 
+# now deploy sample application in kubernetes cluster in new namespace
+
+```
+kubectl create ns k8sdemo
+
+kubectl apply -f https://raw.githubusercontent.com/bvijaycom/meetup/main/guestbook-all-in-one.yaml -n k8sdemo
+
+```
+
+## open putty in the 2nd window and run the below command
+
+```
+watch -n 1 kubectl get all -n k8sdemo
+
+
+```
